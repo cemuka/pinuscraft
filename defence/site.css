@@ -1,0 +1,173 @@
+
+/* START - BOOTSTRAP OVERRIDES */
+/* BOOTSTRAP FONT OVERRIDES */
+/* Heading font: Norwester */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'VT323', monospace;
+  /*text-transform: uppercase;*/
+}
+
+/* Body font: Roboto */
+:root {
+  --font-family-sans-serif: 'VT323', monospace;
+}
+html, body, .tooltip, .popover {
+  font-family: 'VT323', monospace;
+}
+
+/* BOOTSTRAP LINK/BUTTON OVERRIDES */
+a {
+  color: #984B43;
+}
+a:hover {
+  /* #984B43 darkened 10% */
+  color: #753A33 !important;
+}
+.btn.btn-primary {
+  background-color: #984B43;
+  /* #984B43 darkened 5% */
+  border-color: #86423B;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active {
+  /* #984B43 darkened 10% */
+  background-color: #753A33 !important;
+  /* #984B43 darkened 15% */
+  border-color: #63312C !important;
+  /* #FFF darkened 10% */
+  color: #E6E6E6 !important;
+}
+.btn.btn-primary:focus {
+  /* #984B43 darkened 10% */
+  box-shadow: 0 0 0 0.2rem rgba(117, 58, 51, .5) !important;
+}
+
+/* BOOTSTRAP MISC OVERRIDES */
+hr {
+  border-top-color: #fff;
+}
+/* END - BOOTSTRAP OVERRIDES */
+
+/* START - MAILCHIMP STYLE OVERRIDES */
+#mc_embed_signup {
+  clear: left;
+  width: 100%;
+}
+/* END - MAILCHIMP STYLE OVERRIDES */
+
+.home-body {
+  color: #fff;
+  background-color: #18121E;
+  /* TODO: Replace prefixed gradients with autoprefixer */
+  background-image:
+    -webkit-linear-gradient(
+      30deg,
+      #18121E 0%,
+      #233237 100%
+  );
+  background-image:
+    -o-linear-gradient(
+      30deg,
+      #18121E 0%,
+      #233237 100%
+  );
+  background-image:
+    linear-gradient(
+      60deg,
+      #18121E 0%,
+      #233237 100%
+  );
+
+  /* Fixes display of gradient if content is shorter than the screen */
+  min-height: 100vh;
+}
+
+/* Text selection colour */
+::-moz-selection {
+  color: #fff;
+  background: #984B43;
+}
+::selection {
+  color: #fff;
+  background: #984B43;
+}
+
+.title-text-super {
+  top: -10px;
+  position: relative;
+  text-transform: lowercase;
+}
+
+.brand-text {
+  color: #EAC67A;
+}
+
+.heading {
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  margin-bottom: 1.5rem;
+}
+
+/* Add spacing between sections */
+.section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+/* Remove extra padding on first and last section, doesn't correctly handle nested sections */
+.section:first-of-type {
+  margin-top: -1.5rem;
+}
+.section:last-of-type {
+  margin-bottom: -1.5rem;
+}
+
+.socials-link:hover {
+  /* Fixes underscore appearing next to fontawesome icon on hover */
+  text-decoration: none;
+}
+
+.project-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.project-subtitle {
+  font-size: 1.9rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.promo-video {
+  width: 700px;
+  height: 394px;
+  max-width: 100%;
+  max-height: 60vw;
+}
+
+.promo-image {
+  border-radius: 0.25rem;
+  width: 278px;
+  height: auto;
+  max-width: 100%;
+}
+
+.app-store-buttons {
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+}
+
+.app-store-buttons--small {
+  max-width: 220px;
+}
+
+.unknown-space-font {
+  font-family: 'VT323', monospace;
+}
+
+.trademark-notice-text {
+  font-size: 70%;
+}
